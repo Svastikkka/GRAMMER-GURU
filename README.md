@@ -20,5 +20,5 @@ conda activate grammer-guru
 python -m spacy download en_core_web_sm
 uvicorn app.main:app --reload
 streamlit run frontend/main.py
-docker compose up -d
+docker compose up -d # Don't run in your local as you don't have docker installed
 ```
