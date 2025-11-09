@@ -16,7 +16,7 @@
 ## How To Run
 ```bash
 conda create  -n grammer-guru --file requirements.txt
-
+conda activate grammer-guru
 python -m spacy download en_core_web_sm
 uvicorn app.main:app --reload
 streamlit run frontend/main.py
