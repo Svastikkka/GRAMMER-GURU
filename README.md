@@ -15,7 +15,10 @@
 
 ## How To Run
 ```bash
+conda create  -n grammer-guru --file requirements.txt
+
 python -m spacy download en_core_web_sm
 uvicorn app.main:app --reload
-
+streamlit run frontend/main.py
+docker compose up -d
 ```
