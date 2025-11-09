@@ -7,7 +7,15 @@
      ↓
 🔍 spaCy preprocessing + rule-based grammar analysis
      ↓
-🤖 OpenAI LLM (GPT-4/5) → grammar score + natural feedback
+🤖  LLM → grammar score + natural feedback
      ↓
 📦 JSON Response (score, feedback, transcript)
+```
+
+
+## How To Run
+```bash
+python -m spacy download en_core_web_sm
+uvicorn app.main:app --reload
+
 ```
