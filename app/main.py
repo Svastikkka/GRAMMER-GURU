@@ -76,7 +76,7 @@ def generate_feedback(text: str) -> dict:
 
     try:
         response = requests.post(
-            "https://qwen3-dev-azure.llm.voicing.ai/v1/chat/completions",
+            f"https://{ LLM_API_URL }/v1/chat/completions",
             headers={
                 "Content-Type": "application/json",
                 "Authorization": "Bearer sk-dev-qwen3"
